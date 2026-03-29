@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 a {
   text-decoration: none;
   color: var(--text-main);
@@ -23,6 +26,7 @@ nav ul {
   display: flex;
   list-style: none;
   font-size: 18px;
+  padding-left: 0;
 }
 nav ul li {
   margin: 0 0.8rem;
@@ -63,4 +67,81 @@ nav ul li::before {
 }
 nav ul li:hover::before {
   width: 100%;
+}
+nav .icons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  gap: 1.1rem;
+}
+nav .icons i {
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+nav .icons a:last-child {
+  display: none;
+}
+nav .icons i:hover {
+  color: var(--primary);
+  text-shadow: 0 0 8px var(--primary);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+@media (max-width: 991px) {
+  nav {
+    padding: 1.5rem 1rem;
+    position: relative;
+  }
+  nav ul {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background-color: var(--bg-main);
+    font-size: 14px;
+    top: 100%;
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    left: 0;
+    box-shadow: 0px 15px 12px -5px var(--primary);
+    z-index: 5;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  }
+  nav:has(ul.open) {
+    box-shadow: none;
+  }
+  nav ul.open {
+    display: flex;
+  }
+
+  nav ul li {
+    padding:  0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  nav ul li::before {
+    display: none;
+  }
+  nav ul li:not(:last-child) {
+    margin-bottom: 0.8rem;
+  }
+  nav ul li:last-child {
+    border-bottom: none;
+  }
+  nav .logo {
+    font-size: 18px;
+  }
+  nav .icons a:last-child {
+    display: block;
+  }
 }
