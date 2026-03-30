@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 :root {
   --bg-main: #020617;
   --bg-card: #0f172a;

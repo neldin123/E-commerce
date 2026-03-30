@@ -1,0 +1,85 @@
+.hero {
+  min-height: 90vh;
+  background-color: var(--bg-main);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  color: var(--text-main);
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10%;
+}
+.hero .intro-text {
+  text-align: right;
+  flex: 1;
+}
+.hero .intro-text p:first-child {
+  color: var(--primary);
+  display: inline-block;
+  width: 9rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--border-color);
+  text-align: center;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  font-size: 12px;
+  margin-left: auto;
+  text-shadow: 0 0 8px var(--primary);
+}
+.hero .intro-text h1 {
+  font-size: 6rem;
+  margin: 1rem 0 2.5rem;
+}
+.hero .intro-text h1 span {
+  color: var(--primary);
+}
+.hero .intro-text p:last-child {
+  margin: 0;
+  color: var(--text-muted);
+  max-width: 40rem;
+  display: inline-block;
+}
+.hero .intro-text button {
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  text-align: center;
+  margin-left: 3rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+.hero .intro-text .gpu {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+}
+.hero .intro-text .cpu {
+  background-color: var(--primary);
+  color: var(--text-main);
+  border: none;
+  box-shadow: 0 0 20px var(--primary);
+}
+.hero .photo {
+  flex: 1;
+  text-align: left;
+}
+.hero .photo img {
+  box-shadow: 0 0 40px var(--primary);
+  transition: transform 0.3s ease;
+  width: 400px;
+}
+.hero .photo img:hover {
+  transform: translateY(-10px) scale(1.02) rotate(5deg);
+  -webkit-transform: translateY(-10px) scale(1.02) rotate(5deg);
+  -moz-transform: translateY(-10px) scale(1.02) rotate(5deg);
+  -ms-transform: translateY(-10px) scale(1.02) rotate(5deg);
+  -o-transform: translateY(-10px) scale(1.02) rotate(5deg);
+}
