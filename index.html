@@ -23,8 +23,6 @@
     <!-- Component CSS -->
     <link rel="stylesheet" href="CSS/component.css" />
     <title>HARDWARE Store</title>
-    <!-- rgba(0, 88, 190, 0.05) -->
-    <!-- rgb(1 6 23) -->
   </head>
   <body>
     <!-- start nav -->
@@ -32,19 +30,15 @@
       <div class="logo">
         <a href="index.html"><span>HARDWARE</span> Store</a>
       </div>
-      <ul>
-        <li><a href="#">CPUs</a></li>
-        <li><a href="#">GPUs</a></li>
-        <li><a href="#">RAM</a></li>
-        <li><a href="#">STORAGE</a></li>
-        <li><a href="#">COOLING</a></li>
-        <li><a href="#">CASES</a></li>
-      </ul>
+      <div class="search-bar">
+        <input type="text" name="search-bar" placeholder="Enter Product Name">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
       <div class="icons">
         <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         <a href="#"><i class="fa-regular fa-user"></i></a>
         <a href="#"><i class="fa-regular fa-sun theme"></i></a>
-        <a href="#"><i class="fa-solid fa-bars button"></i></a>
+        
       </div>
     </nav>
     <!-- end nav -->
@@ -72,7 +66,7 @@
     </section>
     <!-- end hero -->
     <!-- start gellery -->
-    <div class="gallery">
+    <section class="gallery">
       <div class="container">
         <div class="photo-1 photo">
           <img src="img/ram.png" alt="" />
@@ -103,8 +97,74 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- end gellery -->
+    <!-- start recent products -->
+    <section class="recent-products">
+      <div class="text">
+        <h3>أحدث المنتجات</h3>
+        <a href=""><i class="fa-solid fa-arrow-left"></i>عرض الكل</a>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <div class="image">
+            <img src="img/image-3.jpg" alt="Gigabyte RTX 5060 windforce OC" />
+          </div>
+          <h4>Gigabyte RTX 5060 windforce OC</h4>
+          <div class="card-footer">
+            <span>15,000 EGP</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="img/image-4.jpg" alt="AMD Ryzen 5 7600 Processor" />
+          </div>
+          <h4>AMD Ryzen 5 7600 Processor</h4>
+          <div class="card-footer">
+            <span>8,000 EGP</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img
+              src="img/image-2.jpg"
+              alt="CORSAIR Vengeance RGB 32GB (2 x 16GB) 288-Pin PC RAM DDR5 6400 (PC5 51200) Desktop Memory Model"
+            />
+          </div>
+          <h4>
+            CORSAIR Vengeance RGB 32GB (2 x 16GB) 288-Pin PC RAM DDR5 6400
+          </h4>
+          <div class="card-footer">
+            <span>25,000 EGP</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img
+              src="img/image-1.jpg"
+              alt="Cooler Master Power Supply MWE 650 BRONZE - V2 230V"
+            />
+          </div>
+          <h4>Cooler Master Power Supply MWE 650 BRONZE - V2 230V</h4>
+          <div class="card-footer">
+            <span>5,000 EGP</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end recent products -->
+    <footer>
+      <div class="logo">
+        <a href="#">HARDWARE Store</a>
+      </div>
+      <div class="message">
+        made with love by <span>NELDIN</span>
+      </div>
+    </footer>
     <script src="JS/main.js"></script>
   </body>
 </html>
