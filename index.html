@@ -31,14 +31,13 @@
         <a href="index.html"><span>HARDWARE</span> Store</a>
       </div>
       <div class="search-bar">
-        <input type="text" name="search-bar" placeholder="Enter Product Name">
+        <input type="text" name="search-bar" placeholder="Enter Product Name" />
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
       <div class="icons">
         <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         <a href="#"><i class="fa-regular fa-user"></i></a>
         <a href="#"><i class="fa-regular fa-sun theme"></i></a>
-        
       </div>
     </nav>
     <!-- end nav -->
@@ -46,20 +45,20 @@
     <section class="hero">
       <div class="container">
         <div class="photo">
-          <div class="image">
-            <img src="img/hero.png" alt="hero" />
+          <div class="image reveal">
+            <img src="img/hero.png" alt="hero" loading="lazy" />
           </div>
         </div>
         <div class="intro-text">
-          <p>المستقبل قادم بقوة</p>
-          <h1>قوة <span>مطلقة</span> في متناول يدك</h1>
-          <p>
+          <p class="reveal">المستقبل قادم بقوة</p>
+          <h1 class="reveal">قوة <span>مطلقة</span> في متناول يدك</h1>
+          <p class="reveal">
             نحن لا نبيع مجرد قطع غيار؛ نحن نصمم محركات الإبداع واللعب. اكتشف
             أحدث المعالجات وبطاقات الرسوميات المصممة لأداء لا مثيل له.
           </p>
           <div class="hero-btn">
-            <button class="about">من نحن</button>
-            <button class="start">إبدأ التسوق</button>
+            <button class="about reveal"><a href="about.html">من نحن</a></button>
+            <button class="start reveal"><a href="products.html">ابدا التسوق</a></button>
           </div>
         </div>
       </div>
@@ -68,28 +67,28 @@
     <!-- start gellery -->
     <section class="gallery">
       <div class="container">
-        <div class="photo-1 photo">
+        <div class="photo-1 photo reveal">
           <img src="img/ram.png" alt="" />
           <div class="text">
             <h3>ذواكر الرامات</h3>
             <p>سرعة لا تضاهى</p>
           </div>
         </div>
-        <div class="photo-2 photo">
+        <div class="photo-2 photo reveal">
           <img src="img/gpu.png" alt="" />
           <div class="text">
             <h3>بطاقات الرسوميات</h3>
             <p>أداء فائق الدقة</p>
           </div>
         </div>
-        <div class="photo-3 photo">
+        <div class="photo-3 photo reveal">
           <img src="img/case.png" alt="" />
           <div class="text">
             <h3>صناديق الحاسوب</h3>
             <p>تصاميم معمارية فريدة</p>
           </div>
         </div>
-        <div class="photo-4 photo">
+        <div class="photo-4 photo reveal">
           <img src="img/cooler.png" alt="" />
           <div class="text">
             <h3>أنظمة التبريد</h3>
@@ -103,10 +102,10 @@
     <section class="recent-products">
       <div class="text">
         <h3>أحدث المنتجات</h3>
-        <a href=""><i class="fa-solid fa-arrow-left"></i>عرض الكل</a>
+        <a href="products.html"><i class="fa-solid fa-arrow-left"></i>عرض الكل</a>
       </div>
       <div class="card-container">
-        <div class="card">
+        <div class="card reveal">
           <div class="image">
             <img src="img/image-3.jpg" alt="Gigabyte RTX 5060 windforce OC" />
           </div>
@@ -116,7 +115,7 @@
             <i class="fa-solid fa-cart-shopping"></i>
           </div>
         </div>
-        <div class="card">
+        <div class="card reveal">
           <div class="image">
             <img src="img/image-4.jpg" alt="AMD Ryzen 5 7600 Processor" />
           </div>
@@ -126,7 +125,7 @@
             <i class="fa-solid fa-cart-shopping"></i>
           </div>
         </div>
-        <div class="card">
+        <div class="card reveal">
           <div class="image">
             <img
               src="img/image-2.jpg"
@@ -141,7 +140,7 @@
             <i class="fa-solid fa-cart-shopping"></i>
           </div>
         </div>
-        <div class="card">
+        <div class="card reveal">
           <div class="image">
             <img
               src="img/image-1.jpg"
@@ -161,10 +160,9 @@
       <div class="logo">
         <a href="#">HARDWARE Store</a>
       </div>
-      <div class="message">
-        made with love by <span>NELDIN</span>
-      </div>
+      <div class="message">made with love by <span>NELDIN</span></div>
     </footer>
     <script src="JS/main.js"></script>
+    <script src="JS/cart.js"></script>
   </body>
 </html>

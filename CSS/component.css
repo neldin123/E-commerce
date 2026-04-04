@@ -1,0 +1,20 @@
+header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 2rem 10%;
+  background-color: var(--bg-main);
+}
+header .left-side .path {
+  font-size: 1rem;
+  font-weight: 500;
+}
+header .left-side .path span:first-child {
+  color: var(--primary);
+}
+header .left-side .path span:nth-child(2) {
+  color: var(--primary);
+}
+header .left-side .path span:last-child {
+  color: var(--text-muted);
+}
