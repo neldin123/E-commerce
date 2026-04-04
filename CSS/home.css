@@ -414,14 +414,11 @@ footer .message span {
     text-align: right;
   }
 }
-/* الحالة الافتراضية: العنصر مخفي ومنزاح لتحت شوية */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.8s ease-out;
 }
-
-/* الحالة لما يظهر: يرجع لمكانه الطبيعي */
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
