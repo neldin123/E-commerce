@@ -1,6 +1,7 @@
 const barsButon = document.querySelector("nav .icons .button");
 const links = document.querySelector("nav ul");
 const changeThemeBtn = document.querySelector("nav .icons .theme");
+const hiddenElements = document.querySelectorAll('.reveal');
 
 if (localStorage.getItem("light_mode") === "true") {
   document.body.classList.add("light-mode");
@@ -21,18 +22,16 @@ changeThemeBtn.addEventListener("click", (e) => {
     localStorage.setItem("light_mode", "false");
   }
 });
-// دالة بتراقب العناصر
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    // لو العنصر دخل في نطاق رؤية المستخدم
+   
     if (entry.isIntersecting) {
       entry.target.classList.add('active');
     }
   });
 }, {
-  threshold: 0.1 // يشتغل أول ما 10% من العنصر تظهر
+  threshold: 0.1 
 });
 
-// تحديد كل العناصر اللي واخدة كلاس reveal وبدء مراقبتها
-const hiddenElements = document.querySelectorAll('.reveal');
 hiddenElements.forEach((el) => observer.observe(el));
