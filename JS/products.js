@@ -14,7 +14,7 @@ let allData = [];
 
 async function fetchingData() {
   try {
-    const response = await fetch("../products.json");
+    const response = await fetch("./products.json");
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
