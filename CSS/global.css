@@ -6,7 +6,10 @@ html {
 }
 :root {
   --bg-main: #020617;
+  --bg-select: #232c49;
   --bg-card: #0f172a;
+  --bg-products: #0b1120;
+  --bg-num: rgb(216 226 255);
   --text-main: #ffffff;
   --text-muted: #94a3b8;
   --primary: #3b82f6;
@@ -15,7 +18,10 @@ html {
 
 body.light-mode {
   --bg-main: #f8fafc;
+  --bg-select: #ececec;
   --bg-card: #ffffff;
+  --bg-products: #f8fafc;
+  --bg-num: rgb(216 226 255);
   --text-main: #0f172a;
   --text-muted: #64748b;
   --border-color: #e2e8f0;
@@ -38,4 +44,9 @@ body {
   -o-transition:
     background-color 0.3s,
     color 0.3s;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }

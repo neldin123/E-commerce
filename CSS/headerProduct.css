@@ -1,0 +1,80 @@
+header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 2rem 10%;
+  background-color: var(--bg-products);
+}
+header .left-side .path {
+  font-size: 1rem;
+  font-weight: 500;
+}
+header .left-side .path span {
+  letter-spacing: 3px;
+}
+header .left-side .path span:first-child {
+  color: var(--primary);
+}
+header .left-side .path span:nth-child(2) {
+  color: var(--primary);
+}
+header .left-side .path span:last-child {
+  color: var(--text-muted);
+}
+header .left-side h1 {
+  color: var(--text-main);
+  font-size: 3.5rem;
+  margin: 1rem 0 1.5rem;
+}
+header .left-side h1 span {
+  color: var(--primary);
+  font-style: italic;
+}
+header .left-side p {
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--text-main);
+}
+header .right-side {
+  background-color: var(--bg-select);
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+header .right-side label {
+  color: var(--text-muted);
+  margin-right: 20px;
+  font-size: 1.1rem;
+}
+header .right-side select {
+  border: none;
+  background-color: var(--bg-select);
+  color: var(--text-main);
+  width: 8rem;
+  outline: none;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 5% 1rem;
+  }
+  header .left-side h1 {
+    margin: 1.5rem 0;
+  }
+  header .right-side {
+    margin: 30px auto 0;
+  }
+}
+@media (max-width: 1200px) {
+  header .left-side p {
+    max-width: 28rem;
+  }
+  header .right-side label {
+    margin-right: 0;
+  }
+}

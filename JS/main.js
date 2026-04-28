@@ -1,37 +1,78 @@
-const barsButon = document.querySelector("nav .icons .button");
-const links = document.querySelector("nav ul");
 const changeThemeBtn = document.querySelector("nav .icons .theme");
-const hiddenElements = document.querySelectorAll('.reveal');
+const isLight = localStorage.getItem("light_mode") === "true";
+const categoriesBtns = document.querySelectorAll(
+  ".products-container .categories button",
+);
+const savedCategory = localStorage.getItem("active_category");
+const savedRange = localStorage.getItem("range_value");
+const minRangeText = document.querySelector("span.min-range");
+const pagesBtns = document.querySelectorAll(".pages button.page");
+let priceRange = document.querySelector("#range");
 
-if (localStorage.getItem("light_mode") === "true") {
-  document.body.classList.add("light-mode");
-  changeThemeBtn.classList.replace("fa-sun", "fa-moon");
-} else {
-  document.body.classList.remove("light-mode");
-  changeThemeBtn.classList.replace("fa-moon", "fa-sun");
+document.body.classList.toggle("light-mode", isLight);
+changeThemeBtn.classList.toggle("fa-sun", isLight);
+changeThemeBtn.classList.toggle("fa-moon", !isLight);
+
+changeThemeBtn.addEventListener("click", () => {
+  const isNowLight = document.body.classList.toggle("light-mode");
+
+  changeThemeBtn.classList.toggle("fa-moon", isNowLight);
+  changeThemeBtn.classList.toggle("fa-sun", !isNowLight);
+
+  localStorage.setItem("light_mode", isNowLight);
+});
+
+if (savedCategory) {
+  categoriesBtns.forEach((cat) => {
+    cat.classList.toggle("active", cat.dataset.cat === savedCategory);
+  });
 }
 
-changeThemeBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  document.body.classList.toggle("light-mode");
-  if (document.body.classList.contains("light-mode")) {
-    changeThemeBtn.classList.replace("fa-sun", "fa-moon");
-    localStorage.setItem("light_mode", "true");
-  } else {
-    changeThemeBtn.classList.replace("fa-moon", "fa-sun");
-    localStorage.setItem("light_mode", "false");
-  }
-});
+categoriesBtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    categoriesBtns.forEach((btn) => btn.classList.remove("active"));
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-   
-    if (entry.isIntersecting) {
-      entry.target.classList.add('active');
-    }
+    e.currentTarget.classList.add("active");
+
+    localStorage.setItem(
+      "active_category",
+      e.currentTarget.getAttribute("data-cat"),
+    );
   });
-}, {
-  threshold: 0.1 
 });
 
-hiddenElements.forEach((el) => observer.observe(el));
+if (savedRange) {
+  priceRange.value = savedRange;
+  minRangeText.textContent = `$${savedRange}`;
+}
+
+priceRange.addEventListener("input", function () {
+  localStorage.setItem("range_value", this.value);
+  minRangeText.textContent = `$${priceRange.value}`;
+});
+
+function resetFilters() {
+  localStorage.removeItem("active_category");
+  localStorage.removeItem("range_value");
+
+  categoriesBtns.forEach((btn) => {
+    btn.classList.remove("active");
+  });
+  priceRange.value = 99;
+
+  minRangeText.textContent = `$99`;
+
+  document
+    .querySelectorAll('.manufacturer input[type="checkbox"]')
+    .forEach((input) => {
+      input.checked = false;
+    });
+}
+pagesBtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    pagesBtns.forEach((btn) => btn.classList.remove("active"));
+
+    e.currentTarget.classList.add("active");
+  });
+});

@@ -22,6 +22,10 @@
     <link rel="stylesheet" href="CSS/home.css" />
     <!-- Component CSS -->
     <link rel="stylesheet" href="CSS/component.css" />
+    <!-- Footer CSS -->
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <!-- Cart CSS -->
+    <link rel="stylesheet" href="CSS/cart.css" />
     <title>HARDWARE Store</title>
   </head>
   <body>
@@ -35,12 +39,21 @@
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
       <div class="icons">
-        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="#"><i class="fa-solid fa-cart-shopping shopping"></i></a>
         <a href="#"><i class="fa-regular fa-user"></i></a>
         <a href="#"><i class="fa-regular fa-sun theme"></i></a>
       </div>
     </nav>
     <!-- end nav -->
+    <!-- start cart -->
+    <div class="cart">
+      <div class="total-box">
+        <div class="total">$0</div>
+      </div>
+      <div class="productsInCart">
+      </div>
+    </div>
+    <!-- end cart -->
     <!-- start hero -->
     <section class="hero">
       <div class="container">
@@ -57,14 +70,18 @@
             أحدث المعالجات وبطاقات الرسوميات المصممة لأداء لا مثيل له.
           </p>
           <div class="hero-btn">
-            <button class="about reveal"><a href="about.html">من نحن</a></button>
-            <button class="start reveal"><a href="products.html">ابدا التسوق</a></button>
+            <button class="about reveal">
+              <a href="about.html">من نحن</a>
+            </button>
+            <button class="start reveal">
+              <a href="products.html">ابدا التسوق</a>
+            </button>
           </div>
         </div>
       </div>
     </section>
     <!-- end hero -->
-    <!-- start gellery -->
+    <!-- start gallery -->
     <section class="gallery">
       <div class="container">
         <div class="photo-1 photo reveal">
@@ -97,72 +114,39 @@
         </div>
       </div>
     </section>
-    <!-- end gellery -->
+    <!-- end gallery -->
     <!-- start recent products -->
     <section class="recent-products">
       <div class="text">
         <h3>أحدث المنتجات</h3>
-        <a href="products.html"><i class="fa-solid fa-arrow-left"></i>عرض الكل</a>
+        <a href="products.html"
+          ><i class="fa-solid fa-arrow-left"></i> Show All
+        </a>
       </div>
       <div class="card-container">
-        <div class="card reveal">
-          <div class="image">
-            <img src="img/image-3.jpg" alt="Gigabyte RTX 5060 windforce OC" />
-          </div>
-          <h4>Gigabyte RTX 5060 windforce OC</h4>
-          <div class="card-footer">
-            <span>15,000 EGP</span>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="image">
-            <img src="img/image-4.jpg" alt="AMD Ryzen 5 7600 Processor" />
-          </div>
-          <h4>AMD Ryzen 5 7600 Processor</h4>
-          <div class="card-footer">
-            <span>8,000 EGP</span>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="image">
-            <img
-              src="img/image-2.jpg"
-              alt="CORSAIR Vengeance RGB 32GB (2 x 16GB) 288-Pin PC RAM DDR5 6400 (PC5 51200) Desktop Memory Model"
-            />
-          </div>
-          <h4>
-            CORSAIR Vengeance RGB 32GB (2 x 16GB) 288-Pin PC RAM DDR5 6400
-          </h4>
-          <div class="card-footer">
-            <span>25,000 EGP</span>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-        </div>
-        <div class="card reveal">
-          <div class="image">
-            <img
-              src="img/image-1.jpg"
-              alt="Cooler Master Power Supply MWE 650 BRONZE - V2 230V"
-            />
-          </div>
-          <h4>Cooler Master Power Supply MWE 650 BRONZE - V2 230V</h4>
-          <div class="card-footer">
-            <span>5,000 EGP</span>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-        </div>
+        
       </div>
     </section>
     <!-- end recent products -->
     <footer>
-      <div class="logo">
-        <a href="#">HARDWARE Store</a>
-      </div>
+      <ul class="links">
+        <li>
+          <a href="products.html">Products</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="user.html">User</a>
+        </li>
+      </ul>
       <div class="message">made with love by <span>NELDIN</span></div>
     </footer>
     <script src="JS/main.js"></script>
     <script src="JS/cart.js"></script>
+    <script src="JS/products.js"></script>
   </body>
 </html>

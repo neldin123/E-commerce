@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="CSS/global.css" />
     <!-- Normalize library -->
     <link rel="stylesheet" href="CSS/normalize.css" />
     <!-- font link -->
@@ -14,31 +12,56 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
       rel="stylesheet"
     />
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="CSS/global.css" />
     <!-- Font Awesome library -->
     <link rel="stylesheet" href="CSS/all.min.css" />
     <!-- Navbar CSS -->
     <link rel="stylesheet" href="CSS/navbar.css" />
-    <!-- Home CSS -->
-    <link rel="stylesheet" href="CSS/home.css" />
     <!-- Component CSS -->
     <link rel="stylesheet" href="CSS/component.css" />
+    <!-- Header Product CSS -->
+    <link rel="stylesheet" href="CSS/headerProduct.css" />
+    <!-- Filter Product CSS -->
+    <link rel="stylesheet" href="CSS/filterProducts.css" />
+    <!-- Footer Product CSS -->
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <!-- Cart CSS -->
+    <link rel="stylesheet" href="CSS/cart.css" />
     <title>Products</title>
   </head>
   <body>
+    <!-- start nav -->
     <nav>
       <div class="logo">
         <a href="index.html"><span>HARDWARE</span> Store</a>
       </div>
       <div class="search-bar">
-        <input type="text" name="search-bar" placeholder="Enter Product Name" />
+        <input
+          type="text"
+          name="search-bar"
+          placeholder="Enter Product Name"
+          class="search"
+        />
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
       <div class="icons">
-        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="#"><i class="fa-solid fa-cart-shopping shopping"></i></a>
         <a href="#"><i class="fa-regular fa-user"></i></a>
         <a href="#"><i class="fa-regular fa-sun theme"></i></a>
       </div>
     </nav>
+    <!-- end nav -->
+    <!-- start cart -->
+    <div class="cart">
+      <div class="total-box">
+        <div class="total">$0</div>
+      </div>
+      <div class="productsInCart">
+      </div>
+    </div>
+    <!-- end cart -->
+    <!-- start header -->
     <header>
       <div class="left-side">
         <div class="path">
@@ -53,7 +76,7 @@
         </p>
       </div>
       <div class="right-side">
-        <label for="select">Sort by</م>
+        <label for="select">Sort by</label>
         <select class="select" id="select">
           <option>Best Match</option>
           <option>Price: high to low</option>
@@ -62,7 +85,124 @@
         </select>
       </div>
     </header>
-    <script src="JS/main.js"></script>
+    <!-- end header -->
+    <section class="products-container">
+      <aside class="filters">
+        <div class="categories-container">
+          <h3>Categories</h3>
+          <div class="categories">
+            <button data-cat="Processors">
+              <div class="iconAndName">
+                <span><i class="fa-solid fa-microchip"></i></span>
+                <span>Processors</span>
+              </div>
+              <span class="num">23</span>
+            </button>
+            <button data-cat="Graphics">
+              <div class="iconAndName">
+                <span><i class="fa-solid fa-bullseye"></i></span>
+                <span>Graphics-Cards</span>
+              </div>
+              <span class="num">26</span>
+            </button>
+            <button data-cat="Storage">
+              <div class="iconAndName">
+                <span><i class="fa-solid fa-server"></i></span>
+                <span>Storage</span>
+              </div>
+              <span class="num">12</span>
+            </button>
+            <button data-cat="Cooling">
+              <div class="iconAndName">
+                <span><i class="fa-regular fa-snowflake"></i></span>
+                <span>Cooling</span>
+              </div>
+              <span class="num">10</span>
+            </button>
+            <button data-cat="Cases">
+              <div class="iconAndName">
+                <span><i class="fa-solid fa-box"></i></span>
+                <span>Cases</span>
+              </div>
+              <span class="num">34</span>
+            </button>
+            <button data-cat="Powersupply">
+              <div class="iconAndName">
+                <span><i class="fa-solid fa-bolt"></i></span>
+                <span>Power Supply</span>
+              </div>
+              <span class="num">34</span>
+            </button>
+            <button data-cat="Accessories">
+              <div class="iconAndName">
+                <span><i class="fa-solid fa-wrench"></i></span>
+                <span>Accessories</span>
+              </div>
+              <span class="num">34</span>
+            </button>
+          </div>
+        </div>
+        <div class="price-range-container">
+          <h3>Price Range</h3>
+          <div class="range">
+            <input
+              type="range"
+              min="99"
+              max="4999"
+              step="100"
+              value="99"
+              id="range"
+            />
+            <div class="range-numbers">
+              <span class="min-range">$99</span>
+              <span>$4999</span>
+            </div>
+          </div>
+        </div>
+        <div class="manufacturer-container">
+          <h3>Manufacturer</h3>
+          <div class="manufacturer">
+            <label>
+              <input type="checkbox" />
+              Intel
+            </label>
+            <label>
+              <input type="checkbox" />
+              Nvidia
+            </label>
+            <label>
+              <input type="checkbox" />
+              KingStone
+            </label>
+            <label>
+              <input type="checkbox" />
+              Asus
+            </label>
+          </div>
+        </div>
+        <button class="btn" onclick="resetFilters()">Reset All Filters</button>
+      </aside>
+      <div class="products-cards"></div>
+    </section>
+    <footer>
+      <ul class="links">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="user.html">User</a>
+        </li>
+      </ul>
+      <div class="message">made with love by <span>NELDIN</span></div>
+    </footer>
     <script src="JS/cart.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/products.js"></script>
   </body>
 </html>

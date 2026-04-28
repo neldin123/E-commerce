@@ -1,0 +1,167 @@
+{
+  "recent_products": [
+    {
+      "id": 1,
+      "title": "Nvidia Geforce RTX-5090",
+      "category": "Graphics / Nvidia",
+      "rating": 4.9,
+      "image_url": "./img/rtx5090.jfif",
+      "specifications": { "power": "450W", "vram": "32gb VRAM" },
+      "price": 1999.0,
+      "currency": "$"
+    },
+    {
+      "id": 2,
+      "title": "AMD Ryzen 7 9800X3D",
+      "category": "Processors / AMD",
+      "rating": 5.0,
+      "image_url": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=600&auto=format",
+      "specifications": { "speed": "5.4GHz", "threads": "16 Threads" },
+      "price": 499.0,
+      "currency": "$"
+    },
+    {
+      "id": 3,
+      "title": "Kingston Fury Renegade DDR5",
+      "category": "Memory / Kingston",
+      "rating": 4.8,
+      "image_url": "https://images.unsplash.com/photo-1562976540-1502c2145186?w=600&auto=format",
+      "specifications": { "latency": "CL30", "speed": "6400MT/s" },
+      "price": 449.0,
+      "currency": "$"
+    },
+    {
+      "id": 4,
+      "title": "Asus ROG Ryujin III 360",
+      "category": "Thermal / Asus",
+      "rating": 4.9,
+      "image_url": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=600&auto=format",
+      "specifications": { "radiator_size": "360mm", "screen_type": "IPS" },
+      "price": 699.0,
+      "currency": "$"
+    },
+    {
+      "id": 5,
+      "title": "Samsung 990 Pro 4TB",
+      "category": "Storage / Samsung",
+      "rating": 4.9,
+      "image_url": "https://images.unsplash.com/photo-1591799265444-d66432b91588?w=600&auto=format",
+      "specifications": { "speed": "7450MB/s", "interface": "PCIe Gen4" },
+      "price": 320.0,
+      "currency": "$"
+    },
+    {
+      "id": 6,
+      "title": "MSI MEG X870E GODLIKE",
+      "category": "Motherboards / MSI",
+      "rating": 4.7,
+      "image_url": "https://images.unsplash.com/photo-1587202372616-b43abea06c2a?w=600&auto=format",
+      "specifications": { "socket": "AM5", "form_factor": "E-ATX" },
+      "price": 1250.0,
+      "currency": "$"
+    },
+    {
+      "id": 7,
+      "title": "Alienware 34 Curved",
+      "category": "Monitors / Dell",
+      "rating": 5.0,
+      "image_url": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&auto=format",
+      "specifications": { "refresh_rate": "175Hz", "resolution": "UWQHD" },
+      "price": 899.0,
+      "currency": "$"
+    },
+    {
+      "id": 8,
+      "title": "Corsair RM1000x Shift",
+      "category": "Power Supply / Corsair",
+      "rating": 4.8,
+      "image_url": "https://images.unsplash.com/photo-1625842268584-8f3296236761?w=600&auto=format",
+      "specifications": { "wattage": "1000W", "efficiency": "80+ Gold" },
+      "price": 210.0,
+      "currency": "$"
+    },
+    {
+      "id": 9,
+      "title": "Lian Li PC-O11 Dynamic",
+      "category": "Cases / Lian Li",
+      "rating": 4.9,
+      "image_url": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=600&auto=format",
+      "specifications": {
+        "form_factor": "Mid Tower",
+        "radiator_size": "360mm"
+      },
+      "price": 170.0,
+      "currency": "$"
+    },
+    {
+      "id": 10,
+      "title": "Logitech G Pro X 2",
+      "category": "Peripherals / Logitech",
+      "rating": 4.9,
+      "image_url": "https://images.unsplash.com/photo-1605773527852-c546a8584ea3?w=600&auto=format",
+      "specifications": { "speed": "32k DPI", "weight": "60g" },
+      "price": 159.0,
+      "currency": "$"
+    },
+    {
+      "id": 11,
+      "title": "SteelSeries Apex Pro TKL",
+      "category": "Peripherals / SteelSeries",
+      "rating": 4.8,
+      "image_url": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600&auto=format",
+      "specifications": { "switch_type": "Magnetic", "latency": "0.7ms" },
+      "price": 189.0,
+      "currency": "$"
+    },
+    {
+      "id": 12,
+      "title": "WD Black SN850X 2TB",
+      "category": "Storage / WD",
+      "rating": 4.9,
+      "image_url": "https://images.unsplash.com/photo-1591799265444-d66432b91588?w=600&auto=format",
+      "specifications": { "speed": "7300MB/s", "interface": "PCIe Gen4" },
+      "price": 160.0,
+      "currency": "$"
+    },
+    {
+      "id": 13,
+      "title": "Razer DeathAdder V3 Pro",
+      "category": "Peripherals / Razer",
+      "rating": 4.7,
+      "image_url": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=600&auto=format",
+      "specifications": { "speed": "30k DPI", "latency": "0.2ms" },
+      "price": 149.0,
+      "currency": "$"
+    },
+    {
+      "id": 14,
+      "title": "Noctua NH-D15 Black",
+      "category": "Thermal / Noctua",
+      "rating": 5.0,
+      "image_url": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=600&auto=format",
+      "specifications": { "fan_size": "140mm Dual", "socket": "Multi" },
+      "price": 119.0,
+      "currency": "$"
+    },
+    {
+      "id": 15,
+      "title": "NZXT H9 Flow White",
+      "category": "Cases / NZXT",
+      "rating": 4.8,
+      "image_url": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=600&auto=format",
+      "specifications": { "form_factor": "Dual Chamber", "radiator": "360mm" },
+      "price": 159.0,
+      "currency": "$"
+    },
+    {
+      "id": 16,
+      "title": "Crucial T705 2TB Gen5",
+      "category": "Storage / Crucial",
+      "rating": 4.6,
+      "image_url": "https://images.unsplash.com/photo-1591799265444-d66432b91588?w=600&auto=format",
+      "specifications": { "speed": "14500MB/s", "interface": "PCIe Gen5" },
+      "price": 310.0,
+      "currency": "$"
+    }
+  ]
+}
