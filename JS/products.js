@@ -19,17 +19,21 @@ async function fetchingData() {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const json = await response.json();
-    const data = json.recent_products || [];
-    allData = json.recent_products || [];
+    
+    // التعديل هنا: الـ API بيرجع الـ Array جوه كلمة products
+    const data = json.products || []; 
+    allData = json.products || [];
+
     if (!Array.isArray(data)) {
       throw new Error("Invalid data format");
     }
 
+    // تعديل شرط المسار عشان يشتغل على الجهاز وعلى GitHub Pages
     const currentPath = window.location.pathname;
-    if (currentPath === "/index.html" || currentPath === "/") {
+    if (currentPath.includes("index.html") || currentPath.endsWith("/")) {
       displayProducts(data, 1, recentProducts);
-    } else if (currentPath === "/products.html") {
-      displayProducts(data, 1, productsContainer); // Assuming same container; adjust if different
+    } else if (currentPath.includes("products.html")) {
+      displayProducts(data, 1, productsContainer);
     }
   } catch (error) {
     console.error("An Error Happened: ", error);
