@@ -14,7 +14,7 @@ let allData = [];
 
 async function fetchingData() {
   try {
-    const response = await fetch("https://api.npoint.io/0b0b852661cdfc864f7f");
+    const response = await fetch("https://dummyjson.com/products/category/laptops");
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
